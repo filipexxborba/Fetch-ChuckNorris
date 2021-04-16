@@ -23,9 +23,11 @@
             background: whitesmoke;
         }
         h1{
+            padding: 32px;
             max-width: 50ch;
             font-size: 24px;
         }
+        
         p{
             display: block;
             margin-top: 16px;
@@ -46,6 +48,16 @@
             width: 32px;
             height: 32px;
             animation: spin 2s linear infinite;
+        }
+
+        @media (max-width: 600px)
+        {
+          h1{
+            font-size: 14px;
+          }
+          p{
+             margin: 0 auto;
+          }
         }
 
         @keyframes spin {
